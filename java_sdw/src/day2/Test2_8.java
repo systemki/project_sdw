@@ -38,7 +38,7 @@ public class Test2_8 {
 		}else if(ch == '/') {
 			result = (double)num1 / num2;
 		}
-		System.out.println("" + num1 + " " + ch + " " + num2 + " = " + result);
+		System.out.println("" + num1 + "+" + ch + " " + num2 + " = " + result);
 		
 		scan.close();
 		}

@@ -17,7 +17,7 @@ public class Varlable2 {
 	int studentCount = 5;
     // 변수는 기본적으로 소문자, 
 	// 카멜 표기법 : 두 영단어로 구성된 경우, 두번째 단어부터 첫글자만 대문자로 사용 
-	
+
 	
 	}
 
