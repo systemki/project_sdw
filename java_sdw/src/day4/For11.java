@@ -17,6 +17,10 @@ public class For11 {
 		 */
 
 		
+
+		
+		
+		
 		int  i,  num1 = 8, num2 = 12;
 		
 		for(i = 1; i <= num1 * num2 ; i+= 1 ) {
