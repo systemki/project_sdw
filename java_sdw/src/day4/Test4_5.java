@@ -31,12 +31,12 @@ public class Test4_5 {
 	
 	
 	public static void main(String[] args) {
-		int min = 1, max =100, num, r; 
+		int min = 1, max =100, num, r;  
 		r = (int)(Math.random() * (max - min + 1) +min); //램덤 명령어 변수 r이랑 대입
 		Scanner scan = new Scanner(System.in);
 		
 		for(; ; ) { 	// 반복횟수 : X 없으면 반복성에 내용을 적지 않아도 됨 (반복문 시작)
-			System.out.println("정수를 입력하세요 1 ~ 100"); // (규칙성 시작 부분 for밑 부터 규칙성으로 if )
+			System.out.println("정수를 입력하세요 " +   min + " ~ " + max ); // (규칙성 시작 부분 for밑 부터 규칙성으로 if )
 
 			num = scan.nextInt();  // 콘솔에서 정수를 입력 받음 
 			if(num > r ){	 //입력 받은 정수가 램덤한 수가 크면  rum:현재 입력한 숫자 , r : 램덤으로 설정된 값 
