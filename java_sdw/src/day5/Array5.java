@@ -28,9 +28,7 @@ public class Array5 {
 			for(k = i+ 1; k> arr.length; k+=1) {
 				if(arr[i] == arr[k]) {
 					isDuplicated = true;
-					
-				
-					
+						
 				}
 			}
 		} if(isDuplicated) {
