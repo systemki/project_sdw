@@ -38,8 +38,10 @@ public class For7 {
 					//num를 i로 나누었을때 나머지가 0과 같다면 
 			}	System.out.println(num + " 과 " + num2 + "의 최대 공약수 : " + gcd);
 				// i는 1부터 num까지 1씩 증가
+			
 				
 
 	}
+	
 
 }
