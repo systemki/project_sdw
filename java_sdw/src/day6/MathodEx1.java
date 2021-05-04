@@ -5,8 +5,9 @@ public class MathodEx1 {
 	public static void main(String[] args) {
 		//메소드 예제
 		//메소드명(값);
-		System.out.println(add(1,3));
+		System.out.println(add(1,4));
 		add2(1,2);
+		
 		printMultiTable(8);
 		int num1 = 8,  num2 = 12;
 		int res = gcd (num1, num2);
@@ -51,8 +52,9 @@ public class MathodEx1 {
 		 * 리턴타입 : int
 		 * 메소드명 : gcd 
 		 */
-	}
-	
+	}			  //변수명  매개변수
+	//		int res = gcd (num1, num2);
+
 	public static int gcd(int num1, int num2) {
 		int i, gcd = 0;
 		for(i =1; i<= num1 ; i+=1)
@@ -72,9 +74,10 @@ public class MathodEx1 {
 	 ///	    	변수타입   메소드명   매개변수 
 	 
 	public static void printMultiTable( int num){
-		int i;
+		int i, x;
 		 for(i = 1; i <=9 ; i+=1) {
-			 System.out.println( i + "X" + i + "= " + (num*i) );	 
+			 x = i;
+			 System.out.println( x + "X" + x + "= " + (num*x) );	 
 	
 		 }
 	

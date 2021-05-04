@@ -20,7 +20,7 @@ public class Array5 {
 		System.out.print("램덤 : ");
 		
 		for(i = 0 ; i <= 3; i+=1) {
-		arr[i] = (int)(Math.random() * (max - min + 1) +min);
+
 		System.out.print(arr[i] + " ");
 		}
 		boolean isDuplicated = false;
