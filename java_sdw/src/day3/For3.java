@@ -15,4 +15,9 @@ public class For3 {
 	
 
 }
+	public static void gcd(int num) {
+		for(int i = 1; i <=9 ; i++) {
+		
+		}  	return num;
+	}
 }

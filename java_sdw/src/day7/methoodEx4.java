@@ -3,7 +3,7 @@ package day7;
 public class methoodEx4 {
 
 	public static void main(String[] args) {
-		System.out.println(gcd1(8,12));
+		gcd1(2, 3);
 	}
 		/* 
 		 * 기 능  : 두 정수의 최대 공약수를 알려주는 메소드 
