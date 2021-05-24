@@ -48,7 +48,7 @@ public class MapTest2 {
 		System.out.println("2.로그인");
 		System.out.println("3.종료");
 	System.out.println("===================");	
-	System.out.println("메뉴 센턱 : ");
+	System.out.println("메뉴 선택 : ");
 	 menu =scan.nextInt();
 	 String id, pw;
 	//입력 받은 메뉴에 따른 기능
@@ -59,7 +59,7 @@ public class MapTest2 {
 				 System.out.println("아이디를 입력하세요"); 
 				 id = scan.next();
 				 //가입된 아이디가 아니면 비밀번호 입력 후 아이디와 비밀번호를 저장 
-				   if(map.containsKey(id)){
+				   if(!map.containsKey(id)){
 					   System.out.println("비밀번호 : ");
 					   pw = scan.next();
 					   map.put(id, pw);
@@ -67,7 +67,7 @@ public class MapTest2 {
 				   }
 				   else{
 					   System.out.println("=====================");
-					   System.out.println("이미 가입된 아이디 입니다.");
+					   System.out.println("이미 가입된 아이디 됨.");
 					   System.out.println("=====================");
 					   
 					   
