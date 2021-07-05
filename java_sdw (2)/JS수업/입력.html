@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력예제</title>
+</head>
+<body>
+    <script>
+        // prompt안내문구 : 입력 팝업창을 생성되면 입력된 값을 가져오는 함수 
+        var num1 =prompt('정수를 1입력하세요');
+        var num2 =prompt('산술 연산자 입력하세요')
+        var num2 =prompt('정수를 2입력하세요');
+        var res = calc(num1, op, num2);
+
+        document.write(`${inNaN(num1)}`);
+        document.write(`${inNaN(op)}`);
+        document.write(`${inNaN(num2)}`);
+
+        function calc(num1, op, num2){
+               if(isNaN(num1) || isNaN(num2)) {
+                            return 'NaN';
+                        }
+                        switch(op){
+                        case '+' : return num1 + num2;
+                        case '*' : return num1 * num2;
+                        case '/' : return num1 / num2;
+                        case '%' : return num1 % num2;
+                        case '-' : return num1 - num2;
+                        default: return 'wrong opearator';
+                    }
+                }
+
+    </script>
+</body>
+</html>

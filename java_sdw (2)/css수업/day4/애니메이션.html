@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>애니메이션 예제</title>
+	<style>
+/* 
+		- 애니메이션을 등록
+		@keyframes애니션명
+		- 애니메이션을 호출
+
+ */
+@keyframes textScale{
+	0%{font-size: 20px;}
+	50%{font-size:100px;}
+	100%{font-size: 20px;}
+}
+.scale{
+	animation-name: textScale; animation-duration: 3s;
+	animation-iteration-count: 1;
+/* 호버라는 글자에 마우스를 가져다 대면 글자가 20px에서 100까지 켜져다가 20px로 작아지도록
+*/
+
+	</style>
+
+
+</head>
+<body>
+	<span class="scale">꽝</span>
+	<span class="scale">호버</span>
+</body>
+</html>

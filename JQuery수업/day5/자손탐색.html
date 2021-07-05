@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script>
+			$(function(){
+				$('box')
+				$('.box').children().css('border-color','black');
+				$('.box').children('.ch1').css('border-color','3px');
+				$('.box').find('.link').css('background', 'yellow');
+			});
+					/*
+					- children() : 자식요소들을 선택 
+					- children('선택자') : 자식 요소 중 선택자와 일치하는 요소를 선택
+					- find('선택자') : 자손 요소 중 선택자와 일치하는 요소를 선택
+					*/
+
+
+	</script>
+	<style>
+		*{padding : 10px; border: solid 2px red; list-style: none; background: white;}
+		a{display: block; }
+	</style>
+</head>
+<body>
+	<div class="box">
+		box
+		<div class="inner-box ch1">
+			inner-box
+			<ul>
+				ul
+				<li>
+				li					
+					<a href="#" class="link">메뉴1</a></li>
+			</ul>
+		</div>
+
+
+		
+		<div class="inner-box">
+			inner-box
+			<ul>
+				ul
+				<li>
+				li					
+					<a href="#" class="link">메뉴1</a></li>
+			</ul>
+		</div>
+
+	</div>
+</body>
+</html>

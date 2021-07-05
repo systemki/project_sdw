@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- base태그가 없으면 base3.html이 있어서 잘 실행되는데
+base 태그가 잇으면 네이버에서 base3.html 을 찾기 때문에 원하는 결과를 확인 할수 없다. -->
+<!-- <base href="https://www.naver.com"> -->
+</head>
+<body text="blue">
+    
+<!-- 
+
+- a 태그
+    - 인라인 태그
+    - 기능
+    1. 하이퍼 링크 : 다른 페이지로 이동
+        - 다른 사이트로 이동하는 경우에는 앞에http:// 를 붙여줘야함 
+        - 같은 사이트내에 다른 페이지로 이동하는 경우 현재 html 파일을 기준으로 
+            이동하려는 파일 위치를 계산해서 적어준다.
+            
+
+    2. 싱커 : 같은 페이지 내에 특정 위치로 이동 
+    - 속성
+        -href : 이동할 주소 또는 위치 
+        -target : 현재창, 새창, 부모창, 조상창, 이동 할것인지 
+            현재창_self, 새창_blank, 부모창_parent, 조상창_top 
+
+    3. 다운로드 : 지정된 파일로 다운로드
+
+ -->
+
+ <a href="https://www.naver.com">네이버</a>
+ <a href="www.naver.com">네이버</a>
+ <a href="https://naver.com">네이버</a>
+<a href="base3.html">기존예제</a>
+<a href="..d\:JAVA_SDW/html/day1/base3.html">기존예제</a> 
+<a href="base3.html" target="_blank">기존예제</a>     <!-- 새창에서 이동 -->
+<a href="https://naver.com"><img src="백구.jpg" width="auto" height="200" alt="네이버"></a>
+
+
+<!-- 심커
+    - 심커 기능을 사용하려면 원하는 요소에 id를 부여
+    - href="#아이디명" : 해당아이디 위치로 이동
+
+
+-->
+ <a href="#bottom">페이지 이동 할께용1 </a>
+
+ <br><br><br><br><br><br><br><br><
+
+
+ <div><a id="bottom">페이지 이동 할께용2 </a></div>
+ <br><br><br><br><br><br>
+
+ <!-- 다운로드
+    -download
+-->
+<a href="백구.jpg" download>백구다운로드</a>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+
+	<script>
+
+	$(function(){
+		$('#btn1').on(click, function(){
+				$('.box2').show();
+				});
+
+			
+
+			});
+
+	</script>
+
+	<style>
+										
+		.container{  
+			position: relative;
+		}
+		.box1{
+			height: 50px; background-color: red; 
+		}
+		
+		.box2{
+			height: 400px; background-color: green;  
+		}
+
+		.box3{
+			height: 300px; background-color: blue; position: absolute;
+			top :0; left: 0; right: 0; display: none;
+		}
+		#{flood-opacity: display:none;}
+
+	</style>
+	
+	<title>11</title>
+</head>
+<body>
+	<button id="btn1">더보기</button></div>
+	<div class="container">
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+	</div>
+
+	
+
+	
+	
+</body>
+</html>

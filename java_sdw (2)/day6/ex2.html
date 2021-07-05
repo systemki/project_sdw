@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>네이버 구조 예제</title>
+    <style>
+
+table.table1{ border: 1px solid #dae1e6; background-color: rgb(235, 235, 232); border-collapse: collapse;}
+		.table1 td,.table1 th{ border: 2px solid  #dae1e6; text-align: center; width: 128px ; height: 49px;}
+
+		.table2{width: 100%; border-collapse: collapse;}
+		.table2 th:first-child,.table2 td:first-child{	width: 10%;}
+		.table2 th:nth-child(3),.table2 td:nth-child(3){	width: 20%;}
+		.table2 th:nth-child(4),.table2 td:nth-child(4){	width: 10%;}
+		.table2 thead th{
+			border: 1px solid  #dae1e6;
+			border-width: 1px 0;
+		}
+		.table2 tr>td{text-align: center;}
+		.table2 tr>td:nth-child(2){text-align: left;}
+		.table2 tr>td:nth-child(2)>a{text-decoration: none; color: black;}
+		.table2 tr>td:nth-child(2)>a:hover{text-decoration: underline;}
+		.table2 tbody tr:hover{background-color: yellow;}
+
+
+
+        *{padding: 0; margin: 0;}
+        ul.ol{list-style: none;}
+        a{text-decoration: none; color: #000;}
+
+        .container{width: 1150px; margin: 0 auto;}
+        .box1{box-sizing: border-box ; height: 49px; border: 1px solid red;}
+        .box2{box-sizing: border-box ; height: 160px;  position: relative;}
+        .box3{box-sizing: border-box ; height: 52px; width:  100%; border: 1px solid #323232;}
+        .box4{box-sizing: border-box ; min-height: 1190px; padding: 20px 30px; border: 1px}
+        .box4-1{box-sizing: border-box; position: absolute; left: 210px; top: calc(35% + 20px); overflow: auto; width: 1100px; height: 1140px; }
+        .box5{box-sizing: border-box ;  height: 50px; border: 1px solid greenyellow;}
+        .box2-1{box-sizing: border-box; position: absolute; left: 10px; top: calc(50% - 26px); overflow: auto; width: 220px; height: 52px; border: 1px solid red;}
+        .box2-2{box-sizing: border-box; position: absolute; left:250px; top: calc(50% - 28px); overflow: auto;  width: 586px; height: 56px; border: 1px solid #19ce60; }
+        .box2-3{box-sizing: border-box; position: absolute; left:835px; top: calc(50% - 28px); overflow: auto;  width: 56px; height: 56px; border: none; background-color: #19ce60; }
+        input[name="qr"]{ 
+			height: 30px; width: 474px; position: absolute;  top: calc(50% - 14px);  left: 268px; display: block;
+			border: none; font-size: 14px;
+        }
+        input[name="qr"]:focus{outline: none;}
+        .box3-1{box-sizing: border-box ; height: 48px; width:  1150px; border: 1px solid blue;}
+
+
+        .box4left{box-sizing: border-box; position: absolute;   overflow: auto; width: 750px; height: 100% ; border: 1px solid red;}
+        .box4right{box-sizing: border-box; position: absolute; left: 770px;  overflow: auto;  width: 325px ; height: 100%; border: 1px solid orange; }
+
+        .box4left-up{box-sizing: border-box; position: absolute;   overflow: auto; width: 746px; height: 135px ; border: 1px solid green;}
+        .box4left-down{box-sizing: border-box; position: absolute;  top: 160px; overflow: auto; width: 746px; background: plum; height: 135px ; border: 1px solid blueviolet;}
+        .box4left-down2{box-sizing: border-box; position: absolute; background :gray ; top: 294px; overflow: auto; width: 746px; height: 56px ; border: 1px solid blueviolet;}
+        .box4left-down3{box-sizing: border-box; position: absolute;  top: 349px; overflow: auto; width: 746px; height: 260px ; border: 1px solid rgb(19, 19, 20);}
+
+        .box4right-up{box-sizing: border-box; position: absolute;   overflow: auto;  width: 321px ; height: 135px; border: 1px solid green; }
+        .box4right-down{box-sizing: border-box; position: absolute; top:160px; overflow: auto;  width: 321px ; height: 47px; border: 1px solid blue; }
+
+        .table1>thead>tr>th1{
+             width: 100%; height: 100%; background: honeydew;
+         }
+         .table1>thead>tr>th1{
+             width: 100%; height: 100%; background: #f7f9fa;
+             display: none;
+         }
+         .table1:hover table1>thead>tr>th1{
+             display: none;
+         }
+         .table1:hover table1>thead>tr>th1{
+             display: block;}
+
+
+
+
+        :right2 .btn-box .prev-btn{
+            float: left; width:  24px; height: 24px; border: 1px solid #e4e8eb;
+            box-sizing: border-box; text-align: center; line-height: 22px; font-size: 12px;
+            cursor: pointer;
+        }
+
+   
+        :right2 .btn-box .next-btn{
+            float: left; width:  24px; height: 24px; border: 1px solid #e4e8eb;
+            box-sizing: border-box; text-align: center; line-height: 22px; font-size: 12px;
+            cursor: pointer; margin-left: -1px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="box1 container"></div>
+    <div class="box2 container">
+        <div class="box2-1"></div>   
+        <div class="box2-2"></div>
+        <form action="">
+            <button type="submit" class="box2-3"></button>
+            <div class="box2-3"></div>
+            <input type="text" name="qr"placeholder="검색입니다.">
+        </form>
+    </div>
+    <div class="box3 container">
+        <div class="box3-1 container"></div>
+    </div>
+    <div class="box4 container">
+        <div class="box4-1">
+            <div class="box4left">
+                <div class="box4left-up"></div>
+                <div class="box4left-down"></div>
+                <div class="box4left-down2"></div>
+                <div class="box4left-down3">
+               
+
+                	<table class="table1">
+                        <thead>
+                            <tr>
+                                <th1>  </th1>
+                                <th2>  </th2>
+                                <th3>  </th3>
+                                <th4>  </th4>
+                                <th5>  </th5>
+                                <th6>  </th6>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>" " </td>
+                                <td>" " </td>
+                                <td>" "</td>
+                                <td>" " </td>
+                                <td>" " </td>
+                                <td>" "</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>" " </td>
+                                <td>" " </td>
+                                <td>" "</td>
+                                <td>" " </td>
+                                <td>" " </td>
+                                <td>" "</td>
+                            </tr>
+                            <tr>
+                                <td>" " </td>
+                                <td>" " </td>
+                                <td>" "</td>
+                                <td>" " </td>
+                                <td>" " </td>
+                                <td>" "</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>" " </td>
+                                <td>" " </td>
+                                <td>" "</td>
+                                <td>" " </td>
+                                <td>" " </td>
+                                <td>" "</td>
+                            </tr>
+                        </tfoot>
+                    </table>    
+
+                </div>
+            </div>
+
+            <div class="box4right">
+                <div class="box4right-up"></div>
+                <div class="box4right-down">
+                  
+                 <div class="btn-box">
+                     <div class="prev-btn"></div>
+                     <i class="far fa-caret-square-right"></i>
+                     <div class="next-btn"></div>
+                     <i class="far fa-chevron-square-left"></i>
+                    </div>
+
+  
+               
+
+                
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="box5 container"></div>
+    <div class="box6 container">.</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+	<title>키보드 이벤트 </title>
+	<script>
+		/* 
+
+			- keydown : 모든 키보드에서 키가 눌렸을 때 (모든 키), keycode값이 영문인 경우 무조건 대문자 값 (특수키 )
+
+			- keyup 	:  키보드에서 눌렀던 키가 올라왔을때 
+
+			- keypress : 키보드에서 키가 눌렸을 때 (ALT, CTRL 등 특수키 제외)
+										keyCode 값이 찍힌 단어에 맞게 코드 값이 나옴
+										대문자면 대문자에 해당하는 값이, 소문자면 해당하는 값이 나옴 
+						
+		*/
+
+		$(function(){
+			$('#input').keydown(function(e){
+				console.log('down : ' + e.keycode);
+
+			});
+			$('#input').keypress(function(e){
+				console.log('press: ' + e.keycode);
+				if(e.keycode == 97)
+				console.log('a');
+			});
+			$('input').keyup(function(){
+				console.log('up: ');
+			});
+		})
+
+	</script>
+</head>
+<body>
+	 <input type="text" id="input">
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+
+	<script>
+
+	$(function(){
+
+		$('.menu a').click(function(){
+			var target = $(this).attr('data-target');
+			$('.box').hide();
+			$(target).show();
+		})
+		$('#male').prop('checked',ture);
+	 $('#pw').prop('readonly',ture);
+	})
+
+		/*
+				- 요소의 속성정보 설정하기
+				- attr('속성명' , '값');
+				- apop('속성명' , '값');
+		*/
+
+
+	</script>
+
+<style>
+	*{
+		padding: 0; margin: 0; text-decoration: none; color: #000;
+		list-style: none;
+
+
+	}
+	.menu::after{
+		display: block; content: ''; clear: both;
+	}
+	.menu{
+		display: flex; border: solid 1px black;
+
+	}
+	.menu>li{
+		width: 100%;
+	}
+	.menu>li>a{
+		display: block; height: 50px; border-right: 2px solid black;
+		text-align: center; line-height: 50px;
+
+	}
+	.menu>li>a:last-child{
+		border-right: none;
+	}
+	.menu>li:hover{
+		background-color: yellow;
+
+}
+.box{
+	height: 200px; margin-top: 20px; background-color: yellow ;
+
+}
+.box2, box3{
+	display: none;
+}
+
+
+
+</style>
+
+	</head>
+	<body>
+	<nav class="nav">
+		<ul class="menu">
+			<li><a href="#" data-target=".box1">메뉴1</a></li>
+			<li><a href="#" data-target=".box2">메뉴2</a></li>
+			<li><a href="#" data-target=".box3">메뉴3</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<div class="box">
+		<div class="box1">1</div>
+		<div class="box2">2</div>
+		<div class="box3">3</div>
+
+
+
+	</div>
+	</div>
+				<a href="http//www.naver.com" class="link-naver">네이버</a><br>
+				<input type="text" id="id" readonly> <br>
+				<input type="checkbox" name="gender" id="male" value="male">남성 <br>
+				<input type="checkbox" name="gender" id="female" value="female">여성 <br>
+					<input type="text" id="pw"><br>
+	</html>

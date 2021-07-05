@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+
+	<script>
+		/* 
+			- up버튼을 클릭하면 박스가 슬라이드 up이 되고, down버튼을 클릭하면 박스가 
+				슬라이드 down이 되도록 코드를 작성하세요. 단, 슬라이드 up, down 아닌  animate를 이용할것
+		*/
+
+		$(function(){
+		
+				$('#btn1').click(function(){
+				$('.box1').stop().animate({height:'0px'},1000)
+				});
+
+
+				$('#btn2').click(function(){
+				$('.box1').stop().animate({height:'200px,100px'},1000)
+				});
+
+		});
+
+	</script>
+	<title>Document</title>
+</head>
+<body>
+
+
+	<button id="btn1">up</button>
+	<button id="btn2">down</button>
+	<div class="box1" style="background: yellow; width: 100px; height: 100px; margin-top: 10px;"></div>
+
+</body>
+</html>

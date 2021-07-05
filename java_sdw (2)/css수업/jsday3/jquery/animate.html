@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+
+	<title>Document</title>
+	<style>
+		.box{ 
+			width: 100px; height: 100px; background: yellow; position: relative; margin-top: 20px; border: solid 2px;
+		}
+	</style>
+	<script>
+		/*$(selector).animate({params},speed,callback);
+			- params : css속성과 값
+			- speed  : 애니메이션 속도
+			- callvack : 애니메이션 끝난 후 해야할 작업을 호출하는 함수 
+			*/
+	
+
+		$(function(){
+			$('#right').click(function(){
+				$('.box').stop().animate({left:'200px'}, 1000,function(){
+					console.log('오른쪽으로 이동 완료 ');
+				});
+			});
+
+			$('#left').click(function(){
+				$('.box').stop().animate({left:'0px'}, 1000,function(){
+					console.log('왼쪽으로 이동 완료 ');
+				});
+			});
+
+
+
+		});
+	</script>
+</head>
+<body>
+	<button id="right">오른쪽</button>
+	<button id="left">왼쪽</button>
+	<div class="box">1</div>
+</body>
+</html>

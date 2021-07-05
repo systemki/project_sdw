@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+	
+	<title>효과</title>
+	<script>
+
+		$(function(){
+
+			/* 
+					- hide(spped, easing, callback);
+					- spped	 : 속도, 기본이 400ms, 가능한 값은 ms, slow, fast
+					- easing : 패턴, 기본이 swing, 가능한 값이 swing, linear
+																추가적인 값은 플러그인을 이용 
+					- callback : 해당 효과가 종료 후 실행할 코드를 함수로 만듬 
+					- call 함수 : 매개변수로 함수가 필요한 경우 생성하는 함수
+
+					*/
+			$('#btn1').click(function(){
+				$('.box').hide('slow','swing',function(){
+				 console.log('하이드 끝');
+				});
+			});
+			$('#btn2').click(function(){
+				$('.box').show('slow',function(){
+					console.log('show 끝')
+				})
+		});
+
+				/* 
+
+					- toggle(spped, easing, callback);
+					- spped	 : 속도, 기본이 400ms, 가능한 값은 ms, slow, fast
+					- easing : 패턴, 기본이 swing, 가능한 값이 swing, linear
+																추가적인 값은 플러그인을 이용 
+					- callback : 해당 효과가 종료 후 실행할 코드를 함수로 만듬 
+					- call 함수 : 매개변수로 함수가 필요한 경우 생성하는 함수
+												| 사라질때 한번, 나타날때 한번 동작함
+					- 해당 요소가 보이면 안보이게, 안보이면 보이게 하는 효과
+				
+					*/
+
+
+		$('#btn3').click(function(){
+				$('.box').toggle('fast,swing',function(){
+					console.log('to끝')
+				});
+		});
+
+		$('#btn4').click(function(){
+				$('.box2').hide('slow',function(){
+					this.show('slow');
+				});
+		});
+
+	});
+	</script>
+</head>
+<body>
+	<button id="btn1">hide</button>
+	<button id="btn2">show</button>
+	<button id="btn3">toggle</button>
+	<button id="btn4">버튼</button>
+	
+	<div class="box" style="display: none;">
+		1234<br> 1234<br> 1234<br> 
+	</div>
+	<div class="box2">
+		4567<br> 4567<br> 4567<br> </div>
+</body>
+</html>

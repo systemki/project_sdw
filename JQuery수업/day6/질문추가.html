@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script>
+		var num = 2, num2 = 1;
+
+			$(function(){
+				$('#main_add_btn').click(function(){
+					var str = 	
+						'<div class="q-main-box">' +
+			'<div class="main-title">질문'+ num++ +'</div>' +
+		'<input type="text" class="main-input">' +
+		
+		'</div>';
+		$('.q-box').append(str);
+				})
+
+				$('#main_add_btn2').click(function(){
+				var str2 = 	
+						'<div class="q-main-box">' +
+			'<div class="main-title">질문'+ '1-'+num++ +'</div>' +
+			'	<input type="text" class="main-input">' +
+			'<div class="main-title">질문2'+ '</div>' +					
+			'<div class="main-title">질문'+ '2-'+num2++ +'</div>' +
+			'	<input type="text" class="main-input">' +			
+			'<button id="main_add_btn2">서브질문추가</button>' 
+			
+		'</div>';
+		'</div>';
+		$('.q-box').append(str2);
+				})
+
+		 
+
+
+			});
+	</script>
+
+	<style>
+		.q-box{
+			position: relative;
+		}
+		#main_add_btn{
+			position:absolute; top:0; right: 0;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="q-box">
+		<button id="main_add_btn">메인질문추가</button>
+		<div class="q-main-box">
+			<div class="main-title">질문1</div>
+			<input type="text" class="main-input">
+			<button id="main_add_btn2">서브질문추가</button>
+		</div>
+	</div>
+</body>
+</html>

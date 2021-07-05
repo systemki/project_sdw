@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>j쿼리</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+
+<script>
+	//jquery  코드 
+ /* 
+ 
+ 	- 요소 선택 
+		$('선택자')
+
+		$('#btn')
+
+		- 이벤트 등록 
+			$('선택자').이벤트명(function(){
+			});
+
+			$('선택자').on('이벤트',function(){
+
+			});
+
+				- body태그안에 요소 배치가 완료 후 이벤트 등록 
+					- 자바스크립트 : load 이벤트는 1번 써야 한다.
+
+				window.addEventListener('load',function(){
+
+				});
+
+				JQuery1 
+				$(document).ready(funtion(){
+				});
+
+
+				Jquery2
+				$(function(){
+				})
+
+		 		이벤트는 이벤트 등록할 시점에 해다 요소들에가만 등록하고, 이후에 생성된 요소들에는 자동으로 이벤트가 등록되지 않음
+				 */
+
+					$(function(){
+						$('#btn').click(function(){
+						alert('버튼');
+					});
+					$('.box').mouseenter(function(){
+						console.log('들어감');
+					});
+					$('.box').mouseleave(function(){
+						console.log('나옴');
+					});
+					$('.box').hover(function(){
+						console.log('호버');
+					});
+					$('#btn2').click(function(){
+						alert('버튼2');
+					});
+						$('.box').mouseover(function(){
+						console.log('오버');
+					});
+				});
+	
+
+					// $('선택자').이벤트명();
+					
+				
+
+</script>
+
+</head>
+<body>
+	
+	<button id ="btn">안녕</button>
+	<button id ="btn2">하이</button>
+	<div class="box" style="background: yellow; width: 400px; height: 400px; float: left;"></div>
+
+</body>
+</html>

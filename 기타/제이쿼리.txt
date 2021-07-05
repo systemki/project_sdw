@@ -1,0 +1,7 @@
+-JQUERY는 JS라이브러리
+-JS에서 요소를 생성하고, 배치하는 코드 스타일이 JQUERY에서 요소를 생성하고
+배치하는 코드 스타일이 많이 다름
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script>
+			$(function(){
+				$('#add').click(function(){
+				var str =
+				'<div class="inner-box">'+
+				'<input type="text">' +
+				'</div>';
+				$('box').append(str);
+				});
+
+
+			});
+	</script>
+	
+<style>
+.box{
+	width: 200px; height: 100px; border: solid 1px green;  text-align: center; margin-top:10px; padding-top: 10px;
+
+}
+</style>
+
+</head>
+<body>
+	
+<div class="box">
+
+<button id="add">추가버튼</button><br>
+<div class="box1">
+	<div class="inner-box">
+<input type="text">
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>display 속성 예제</title>
+	<style>
+
+		.display-none{ display: none;}
+		.visibility{ visibility: hidden;}
+
+		.nav{ border: 1px solid red;}
+		.menu{list-style: none; padding: 0; margin: 0; display: flex;}
+		.menu>li{ 
+			height: 1190px; text-align: center; line-height: 50px; width: 1190px;
+			border-right: 1px solid rgb(211, 95, 17); flex: 1;
+		}
+
+		}
+	</style>
+</head>
+<body>
+	<div class="box display-none">1.</div>
+	<div class="box visibility">2.</div>
+	
+	<nav class="nav">
+		<ul class="menu">
+			<li><a >1</a></li>
+			<li><a >2</a></li>
+			<li><a >3</a></li>
+		</ul>
+	</nav>
+    <nav class="nav">
+		<ul class="menu">
+			<li><a >1</a></li>
+			<li><a >2</a></li>
+			<li><a >3</a></li>
+		</ul>
+	</nav>
+
+</body>
+</html>

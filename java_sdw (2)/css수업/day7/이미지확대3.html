@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 확대 예제3</title>
+    <style>
+        *{text-decoration: none; color: #000;}
+.box22{border: ;}
+.box{margin-top: 200px; width: 410px; border: 1px solid black; float: left;}
+.inner-box::after,innerlo-container::after{clear: both; content: ''; display: block;}
+.img-box{width: 200px; height: 200px; overflow: hidden;}
+.img-box img{width: 200xp; height: 200px; transition: transform 1s;}
+.box:hover img{transform: scale(1.1); }
+.group-box{width: 200px; height: 200px; float: right;}
+p.title{height: 25px; line-height: 25px; font-size: 20px;}
+p.contents{height: 175px; line-height: 25px; font-size: 20px;}
+.group-box:hover p.title{text-decoration: underline;}
+
+
+
+
+     
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inner-box">
+            <div class="img-box">
+                <img src="../백구.jpg" alt="">          
+        </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="inner-box">
+            <div class="img-box">
+                <img src="../백구.jpg" alt="">          
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>
