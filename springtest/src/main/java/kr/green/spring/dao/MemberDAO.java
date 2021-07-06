@@ -5,11 +5,7 @@ import org.apache.ibatis.annotations.Param;
 import kr.green.spring.vo.MemberVO;
  
 public interface MemberDAO {
-
-	MemberVO getMember(@Param("id")String id);
-
-	void signup(@Param("user")MemberVO user);
-  
+    public MemberVO getMember(@Param("id")String id);
 }
  
 

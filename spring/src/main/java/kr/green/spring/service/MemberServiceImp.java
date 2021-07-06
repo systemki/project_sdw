@@ -15,6 +15,32 @@ public class MemberServiceImp implements MemberService {
     public MemberVO getMember(String id) {
         return memberDao.getMember(id);
     }
+
+	@Override
+	public MemberVO signin(MemberVO user) {
+		// 회원 정보가 없거나 아이디가 없으면 null을 반환
+		if(user == null || user.getId() == null) {
+			return null;
+		}
+		//다오에게 아이디와 알려 주면서 회원 정보를 가져오라고 시킴
+		MemberVO dbUser = memberDao.getMember(user.getId());
+		//가져온 회원정보와 비밀번호를 확인하여 일치하면 회원정보를 반환하고 
+		//일치하지 않으면 null을 반환
+		if(dbUser == null || !dbUser.getPw().equals(user.getPw())) {
+			return null;
+		}
+		return dbUser;
+	}
+	@Override
+	public boolean signup(MemberVO user) {
+		//
+		if(user == null || memberDao.getMember(user.getId()) != null) {
+			return false;
+		}
+		//없으면 다오오게 회원 정보를 주면서 회원 가입하라고 시킨후 ture를 리턴
+		memberDao.signup(user);
+		return true;  
+	}
 }
 
 
