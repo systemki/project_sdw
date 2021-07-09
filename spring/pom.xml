@@ -61,26 +61,7 @@
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>1.2.15</version>
-			<exclusions>
-				<exclusion>
-					<groupId>javax.mail</groupId>
-					<artifactId>mail</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>javax.jms</groupId>
-					<artifactId>jms</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>com.sun.jdmk</groupId>
-					<artifactId>jmxtools</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>com.sun.jmx</groupId>
-					<artifactId>jmxri</artifactId>
-				</exclusion>
-			</exclusions>
-			<scope>runtime</scope>
+			<version>1.2.17</version>
 		</dependency>
 
 		<!-- @Inject -->
@@ -97,7 +78,6 @@
 			<version>2.5</version>
 			<scope>provided</scope>
 		</dependency>
-		
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>jsp-api</artifactId>
@@ -117,13 +97,13 @@
 			<version>4.7</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- lombok -->    
+		<!-- lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>1.18.20</version>
 			<scope>provided</scope>
-		</dependency> 
+		</dependency>	
 		<!-- mybatis 의존성 추가 -->
 		<dependency>
 		    <groupId>org.mybatis</groupId>
@@ -147,7 +127,8 @@
 		    <groupId>org.springframework</groupId>
 		    <artifactId>spring-jdbc</artifactId>
 		    <version>${org.springframework-version}</version>
-		</dependency>   
+		</dependency>
+        
 	</dependencies>
     <build>
         <plugins>
@@ -173,7 +154,6 @@
                     <source>1.6</source>
                     <target>1.6</target>
                     <compilerArgument>-Xlint:all</compilerArgument>
-
                     <showWarnings>true</showWarnings>
                     <showDeprecation>true</showDeprecation>
                 </configuration>
